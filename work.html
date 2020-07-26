@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Sign Up Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+<div action="./board.html" method="POST">
+        <h1 class=helvetica>Sign Up Page</h1>
+        <!-- LIST OF EVENTS AND ACTIVITIES -->
+        <h3 class=helvetica>Events, Activities, and Resources</h3>
+        <p>
+            <ul class=helvetica>
+                <li>
+                    Food Pantry: Starting July 5th and every Friday after<br>
+                    Location: 52 Hartford Drive SF, CA 14242, Time: 9 am, 11 am
+                </li>
+                <br>
+                <li>Grocery Dropoff: Select hours below</li>
+                <br>
+                <li>Mask Giveaway: July 14, 18, 22<br>
+                    Location: 1490 Lincoln Drive SF, CA 72334
+                </li>
+            </ul>
+        </p>
+
+        <h4 class=helvetica>NO MASK, NO SERVICE</h4>
+
+        <br><hr><br>
+
+        <!-- INPUT INFO HERE -->
+        <h3 class=helvetica>Personal Information</h3>
+        <form>
+            <!-- first name -->
+            <label for="first-name">First Name</label>
+            <input placeholder="John" type="text" name="first-name" required>
+
+            <!-- last name -->
+            <label for="last-name">Last Name</label>
+            <input placeholder="Smith" type="text" name="last-name" required>
+
+            <br><br>
+
+            <!-- EMAIL -->
+            <label for="email">Email</label>
+            <input placeholder="johnsmith@email.com" type="email" name="email">
+            
+            <!-- phone number -->
+            <label for="number">Phone Number</label>
+            <input placeholder=(123)456-7890 type="text" name="number" pattern="[0-9]{10,11"}>
+        </form>
+
+        <form>
+            <!-- address -->
+            <label for="address">Address (only for Grocery Dropoff)</label>
+            <input placeholder="123 Sesame" type="text" name="address">
+
+
+            <!-- street type -->
+            <label for="street">Street Type</label>
+            <select>
+                <option value="Select">Select</option>
+                <option value="ave">Ave</option>
+                <option value="dr">Dr</option>
+                <option value="St">St</option>
+                <option value="Ct">Ct</option>
+                <option value="Rd">Rd</option>
+                <option value="blvd">BLVD</option>
+                <option value="aly">Aly</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="other">If select other, type here:</label>
+            <input type="text">
+        </form>
+
+        <form>
+            <label for="city">City</label>
+            <input list="cities" name="city" id="city">
+
+            <datalist id="cities">
+                <option value="San Francisco">
+                <option value="Daly City">
+                <option value="Oakland">                
+            </datalist>
+
+            <label for="state">State</label>
+            <input list="states" name="state" id="state">
+
+            <datalist id="states">
+                <option value="California">               
+            </datalist>
+        </form>
+
+        <br><hr><br>
+
+        <form>
+
+            <!-- event choice -->
+            <h3 class=helvetica>Choice of Event (choose all that apply)</h3>
+            <input type="checkbox" name="event">
+            <label for="event">Food Pantry </label>
+
+            <input type="checkbox" name="event">
+            <label for="event">Grocery Dropoff </label>
+
+            <input type="checkbox" name="event">
+            <label for="event">Mask Giveaway </label>
+
+            <br>
+        </form>
+
+        <br><hr><br>
+    
+        <form>
+            <h3 class="helvetica">Questions or Concerns?</h3>
+            <textarea rows="5" cols="30"></textarea>
+        </form>
+
+        <form method="get" action="./board.html">
+            <input type="submit" value="submit">
+        </form>
+</div>
+    </body>
+</html>

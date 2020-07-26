@@ -1,0 +1,38 @@
+body{
+    background-color: 89c9b8;
+}
+
+div{
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: solid;
+    border-color: 092532;
+    border-width: 15px;
+    padding-bottom: 50px;
+}
+
+h1{
+    width: 207px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: c7e2b2;
+    padding: 10px;
+    border-width: 5px;
+}
+
+.helvetica{
+    font-family: sans-serif;
+}
+
+label{
+    font-family: sans-serif;
+}
+
+hr{
+    height: 5px;
+    background-color: c7e2b2;
+}
+
